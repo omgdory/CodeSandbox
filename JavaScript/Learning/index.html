@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my name deece</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> Merit Simulator </h1>
+
+    <div id="myTooltip">
+        <p> instead of alyssa it's alaura </p>
+    </div>
+
+    <div id="container">
+        <div id="statWindow">
+            <p> Attack: <span id="AttackP1"> attackVar1 </span> </br>
+            Defense: <span id="DefenseP1"> defenseVar1 </span> </p>    
+        </div>
+    
+        <div id="statWindow">
+            <p> Attack: <span id="AttackP2"> attackVar2 </span> </br>
+            Defense: <span id="DefenseP2"> defenseVar2 </span> </p>    
+        </div>
+    </div>
+
+    <div>
+        <button onclick="getMerit()">
+            Test
+        </button>
+    </div>
+
+    <div>
+        <p> i think im gonna park right here </p>
+        <img id="meritpic" src="parkrighthere.png" 
+        width="300" />
+    </div>
+
+    <canvas id="thaCanvas" width="600" height="200"></canvas>
+    <script src="canvasHandler.js"> </script>
+    <script src="main.js"> </script>
+</body>
+
+</html>
