@@ -1,10 +1,12 @@
 import pyautogui as pgy
 import time
 
-time.sleep(5)
+# global vars
+score = 0
 
-run = True
-while(run):
-    pgy.typewrite("+merit")
-    time.sleep(0.5)
-    pgy.press("enter")
+def main() -> None:
+
+    return
+
+if __name__ == "__main__":
+    main()
