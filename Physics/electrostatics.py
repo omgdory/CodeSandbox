@@ -20,8 +20,15 @@ def ED_capacitor_sphere(innerRadius: float, outerRadius: float, voltage: float, 
     rdiff = (innerRadius*outerRadius)/(outerRadius-innerRadius)
     return ep * pow((voltage/(r*r)) * rdiff, 2)
 
+def ED_capacitor_parallel(voltage: float, distance: float) -> float:
+    return voltage/distance
+
+# Energy Density for parallel plate capacitor
+def ED(capacitance: float, voltage: float):
+    return (1/2)*capacitance*(voltage*voltage)
+
 if __name__ == "__main__":
-    print(str(ED_capacitor_sphere(0.125, 0.148, 120, 0.147)))
+    print(str())
     
 # def foo(req, *args, **kwargs):
 #     print(req)
