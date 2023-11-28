@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %}
+<h1>Todo List</h1>
+<ul>
+	{% comment %} 'todos' is given from POST request {% endcomment %}
+	{% for todo in todos %}
+	<li>
+		{% comment %}
+		anything embedded in double curlies is a varaible
+		that we are extracting {% endcomment %}
+		{{todo.title}}: {% if todo.completed %}Completed{% else %}Not completed{% endif %}
+	</li>
+	{% endfor %}
+</ul>
+{% endblock content %}

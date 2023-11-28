@@ -3,5 +3,6 @@ from . import views # import views file
 
 urlpatterns = [
     # empty first arg -- go to base url
-    path("", views.home, name="home")
+    path("", views.home, name="home"),
+    path("todos/", views.todos, name="Todos")
 ]

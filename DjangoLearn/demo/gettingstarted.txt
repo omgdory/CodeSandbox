@@ -1,0 +1,33 @@
+https://www.youtube.com/watch?v=nGIg40xs9e4
+
+run server with
+  'python manage.py runserver'
+
+create an app with
+  'python manage.py startapp myapp'
+now link the app by going to settings.py in 'demo'
+  then add 'myapp' to 'INSTALLED_APPS'
+
+--- Templates ---
+to use templates, create directory
+titled 'templates'
+can use jinja templating engine
+
+--- Models ---
+to create models, inherit and set the fields
+  then, apply migration so that the model exists
+  in the database...
+first, register the model in admin.py
+  then, run
+  'python manage.py makemigrations' and
+  'python manage.py migrate'
+NOTE: do this EVERY TIME you make a change to
+  your models
+
+--- Django Admin Panel ---
+Allows us to handle users and models
+To create an admin, run
+  'python manage.py createsuperuser'
+To access admin panel, place '/admin' at the
+  end of the address
+
